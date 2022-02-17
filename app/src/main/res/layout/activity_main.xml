@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="ownerName"
+            type="com.example.aboutme.OwnerName" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical"
+        tools:ignore="contentDescription">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/TextViewPrimary"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:text="@={ownerName.name}"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editTextPersonName"
+            style="@style/TextViewPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@drawable/custom_edit_text"
+            android:ems="10"
+            android:hint="@string/hintText"
+            android:inputType="none|textPersonName"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/gray"
+            android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+            tools:ignore="Autofill" />
+
+        <android.widget.Button
+            android:id="@+id/input_button"
+            style="@style/TextViewPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@drawable/custom_button"
+            android:text="@string/button_text"
+            android:textAllCaps="false" />
+
+        <ImageView
+            android:id="@+id/star_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_star" />
+
+        <TextView
+            android:id="@+id/nicknameTextView"
+            style="@style/TextViewPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/layout_margin"
+            android:text="@={ownerName.nickname}"
+            android:textAlignment="center"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/bio_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bio_text"
+                    style="@style/BioText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bio_text" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_margin"
+                    app:srcCompat="@drawable/ic_technologies_" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>
