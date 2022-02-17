@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dice Roller</string>
+    <string name="roll">Roll</string>
+    <string name="rollValue">1</string>
+    <string name="luckyNumber">Lucky number!</string>
+    <string name="explanationField">It\'s time to start</string>
+    explanation
+</resources>
