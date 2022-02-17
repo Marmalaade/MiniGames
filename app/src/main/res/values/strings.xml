@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CatFeeder</string>
+    <string name="zero_count">0</string>
+    <string name="result">Result</string>
+    <string name="feed_cat">Feed</string>
+    <string name="about">About</string>
+    <string name="satiety">Satiety:</string>
+    <string name="share_success_text">I feed cat %d times!</string>
+    <string name="share">Share</string>
+    <string name="save">Save</string>
+    <string name="score_format">Score: %s</string>
+    <string name="about_creator">Isaienya; 951005; #1</string>
+    <string name="sharing_not_available">Sharing Not Available</string>
+
+</resources>
