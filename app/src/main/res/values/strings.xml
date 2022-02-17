@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">ColorMap</string>
+    <string name="desc">circleButton</string>
+    <string name="random_color">get random</string>
+
+</resources>

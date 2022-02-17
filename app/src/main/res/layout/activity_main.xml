@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/center_circle"
+        style="@style/circleButton"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/first_circle"
+        style="@style/circleButton"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/desc"
+        app:layout_constraintCircle="@id/center_circle"
+        app:layout_constraintCircleAngle="0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+    <Button
+        android:id="@+id/second_circle"
+        style="@style/circleButton"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/desc"
+        app:layout_constraintCircle="@id/center_circle"
+        app:layout_constraintCircleAngle="60"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="293dp" />
+
+    <Button
+        android:id="@+id/third_circle"
+        style="@style/circleButton"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/desc"
+        app:layout_constraintCircle="@id/center_circle"
+        app:layout_constraintCircleAngle="120"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="443dp" />
+
+    <Button
+        android:id="@+id/fourth_circle"
+        style="@style/circleButton"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/desc"
+        app:layout_constraintCircle="@id/center_circle"
+        app:layout_constraintCircleAngle="180"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="518dp" />
+
+    <Button
+        android:id="@+id/fifth_circle"
+        style="@style/circleButton"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/desc"
+        app:layout_constraintCircle="@id/center_circle"
+        app:layout_constraintCircleAngle="240"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="443dp" />
+
+    <Button
+        android:id="@+id/sixth_circle"
+        style="@style/circleButton"
+        android:background="@drawable/circle"
+        android:contentDescription="@string/desc"
+        app:layout_constraintCircle="@id/center_circle"
+        app:layout_constraintCircleAngle="300"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="293dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
