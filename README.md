@@ -1,2 +1,2 @@
-# DiceRoller
-Simple dice throwing game
+# MiniGames
+Simple mini games for have fun
